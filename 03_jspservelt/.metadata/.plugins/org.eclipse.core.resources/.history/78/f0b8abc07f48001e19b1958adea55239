@@ -1,0 +1,12 @@
+package org.galapagos.vo;
+
+public class Member {
+	private String name;
+	private String userid;
+	
+	public Member() {}
+	
+	public Member(String name, String userid) )
+		super();
+
+}

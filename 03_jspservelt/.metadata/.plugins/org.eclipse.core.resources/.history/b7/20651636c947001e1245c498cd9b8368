@@ -1,0 +1,43 @@
+package org.galapagos.ex1;
+
+import java.io.IOException;
+import java.sql.Connection;
+
+import javax.annotation.Resource;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.tomcat.jdbc.pool.DataSource;
+
+
+
+/**
+ * Servlet implementation class Connection
+ */
+@WebServlet("/test")
+public class ConnectionTestServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	@Resource (name="jdbc
+			/mysql" 
+			)
+			javax.sql.DataSource dataFactory
+			;
+			public void execute(){ :
+			try{
+			Connection con = dataFactory.getConnection()
+			;
+			dao.select(con); :
+			}catch(Exception e){
+			e.printStackTrace();
+			}finally{
+			try {
+			if(con!=null) con.close();
+			} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}

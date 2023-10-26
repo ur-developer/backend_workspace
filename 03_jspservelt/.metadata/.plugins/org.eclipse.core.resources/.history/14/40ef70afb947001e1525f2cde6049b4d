@@ -1,0 +1,11 @@
+package org.galapagos.common;
+
+import java.sql.Connection;
+
+public class JDBCUtil {
+	static Connection conn = null;
+	
+	public static void connect(String driver, String url, String username, String password) {
+	}
+	}
+}

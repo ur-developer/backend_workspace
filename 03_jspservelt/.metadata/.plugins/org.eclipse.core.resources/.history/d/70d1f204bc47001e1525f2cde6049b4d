@@ -1,0 +1,17 @@
+package org.galapagos.common;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class JDBCUtil {
+	static Connection conn = null;
+	
+	public static void connect(String driver, String url, String username, String password) throws ClassNotFoundException {
+		// JDBC dirver load
+		Class.forName(driver);
+	
+		// Connection
+		conn = DriverManager.getConnection(url, username, password) 
+	}
+	
+}

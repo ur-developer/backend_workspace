@@ -1,0 +1,7 @@
+package org.galapagos.vo;
+
+public class Member {
+	private String name;
+	private String userid;
+
+}
