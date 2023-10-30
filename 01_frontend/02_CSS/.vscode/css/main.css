@@ -1,0 +1,24 @@
+.footer {
+  background-color: azure;
+}
+
+.jumbotron {
+  /* 절대경로 */
+  /* background-image: url(/01_hTML/images/농장.jpg);*/
+
+  /* 상대경로 */
+  background-image: url(../../01_HTML/images/농장.jpg);
+
+  /* ../.. 상위 디렉토리2회(부모의부모) */
+  background-size: cover;
+  background-position: center;
+}
+a.page-link {
+  border-width: 0px;
+}
+
+.avatar-sm {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
