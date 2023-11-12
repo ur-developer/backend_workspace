@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let age = 10;
+
+      function off(target) {
+        // 기능을 일반화 시킨다. ex) tv를 끄는 것x 무언가를 끄는 것o
+        // alert('TV를 끕니다.');
+        alert(target + 'off');
+        console.log('off를 실행하고 있습니다.');
+      }
+      console.log('off 함수 호출 전입니다.');
+
+      off('전등'); // 함수 호출 *반드시 ()를 붙여줘야함
+      off('선풍기');
+      off('TV');
+      console.log('off 함수가 끝났습니다.');
+    </script>
+  </head>
+  <body></body>
+</html>

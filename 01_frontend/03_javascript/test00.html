@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let x = 10;
+      //최상위 레벨에서 정의됐다.(전역변수 특징) 프로그램 코드 어디서든 사용할수 있다.)
+
+      function test() {
+        let y = 20; // 함수 불럭 안에서 선언됐기때문에 지역변수다.
+        // let y가 아닌 y로 할 경우 y값은 전역 변수
+        console.log('test 안', x, y);
+      } // 선언=메모리할당
+
+      test();
+      console.log(x, y); // test이후 y는 사라지기 때문에 에러가 발생
+      // y가 let가 아니면 전역변수여서 출력이 안됨
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      site = prompt('당신은 어떤 사이트를 많이 가나요?');
+      if (site === '네이버') {
+        alert('초록색 보시겠군요');
+      } else {
+        alert('다른색을 보시겠군요');
+      }
+
+      // 1. id와 pw를 입력해보자.
+      id = prompt('아이디를 입력');
+      pw = prompt('암호를 입력');
+      alert(id + '  ' + pw);
+
+      // id는 root, pw는 1234
+      // 2. id, pw가 맞는지, 틀린지 확인해보자.
+      if (id === 'root' && pw === '1234') {
+        document.write('로그인 성공!!!');
+      } else {
+        document.write('로그인 실패@@@'); // a === '' 입력하지않음
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
